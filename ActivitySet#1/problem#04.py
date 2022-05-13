@@ -6,4 +6,4 @@ if(h>40):
   pay=(40*r)+overtime
 else:
   pay=(h*r)
-print(pay)
+print("pay =" pay)
