@@ -1,16 +1,15 @@
-# Loops & Iterators
+num = 0
+tot = 0.0
+while True :
+  text = input('Enter a number:')
+  if text == 'done' :
+    break
+  try:
+    atext = float(text)
+  except:
+    print('Invalid input')
+    continue
+    num = num + 1
+    tot = tot + atext
 
-largest = None
-smallest = None
-
-while True:
-    num = input("Enter a number? ")
-
-    if num == "done":
-        break
-
-    # ...
-
-    print(num)
-
-print("Maximum", largest)
+print(tot,num,tot/num)
