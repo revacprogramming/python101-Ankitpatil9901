@@ -1,15 +1,21 @@
-num = 0
-tot = 0.0
+l=[]
+
 while True :
   text = input('Enter a number:')
   if text == 'done' :
     break
   try:
-    atext = float(text)
+    atext = int(text)
   except:
     print('Invalid input')
     continue
-    num = num + 1
-    tot = tot + atext
+  l.append(atext)
+        
 
-print(tot,num,tot/num)
+l.sort()
+a=len(l)
+print ("Maximum is",l[a-1])
+print ("Minimum is",l[0])
+           
+    
+  
